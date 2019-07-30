@@ -1,23 +1,21 @@
 var assert = require('assert');
 var {CoreObject} = require('../es6/CoreObject');
-
-
-function testEt() {
-    
-    
-    
-
-}
-
-
 describe('emit test', function() {
     var evnt;
     var verify=false;
     beforeEach(function(done){
+        var function3=function(){
+            console.log("function3");
+        }
         evnt=new CoreObject();
         evnt.on("click",function fonk(){
-            console.log("merhaba dünya");
+            console.log("function 1");
         });
+        evnt.on("click",function(){
+            console.log("function 2")
+        });
+        evnt.on("click",function3);
+        
         if (evnt.emit("click")){
             verify=true;
         }
