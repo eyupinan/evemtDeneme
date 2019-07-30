@@ -1,0 +1,23 @@
+{
+  "name": "eventemt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CoreObject.js",
+  "scripts": {
+    "test": "mocha **/*.test.js",
+    "build": "babel es6 -d es5",
+    "watch": "webpack --watch"
+  },
+  "author": "ibrahim eyyüp inan",
+  "license": "unlicense",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "mocha": "^6.2.0",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "watch": "^1.0.2"
+  }
+}
