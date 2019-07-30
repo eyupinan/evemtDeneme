@@ -45,7 +45,6 @@ class CoreObject{
         // mutualParams değişkeni bütün fonksiyonlara gönderilecek olan değişkenleri içerir liste haline parametre olarak alınır
         // params bir dictionary'dir. her bir fonksiyonun ismine göre parametre listeleri içerir.
         try{
-        console.log(x);
         this.listenerList[event].forEach (function(func){
             var indexFunc=this.listenerList[event].indexOf(func);
             if (typeof(func)==="function"){
