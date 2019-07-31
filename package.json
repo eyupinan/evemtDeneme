@@ -18,6 +18,7 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
+    "sinon": "^7.3.2",
     "watch": "^1.0.2"
   }
 }

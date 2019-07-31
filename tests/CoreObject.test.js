@@ -5,7 +5,7 @@ describe('emit test', function() {
     var verify=false;
     beforeEach(function(done){
         var function3=function(){
-            console.log("function3");
+            console.log("function 3");
         }
         evnt=new CoreObject();
         evnt.on("click",function fonk(){
@@ -15,7 +15,7 @@ describe('emit test', function() {
             console.log("function 2")
         });
         evnt.on("click",function3);
-        
+
         if (evnt.emit("click")){
             verify=true;
         }
